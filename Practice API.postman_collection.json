@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Practice API",
+		"_postman_id": "b7a45230-2c35-4495-d58a-d6dae26cdef4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetStudentList",
+			"request": {
+				"url": "http://localhost:8000/api/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateStudent",
+			"request": {
+				"url": "http://localhost:8000/api/students",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"al-amin\",\n\t\"course\":\"Laravel\",\n\t\"phone\":\"01822442222\",\n\t\"email\":\"alamin@gmail.com\",\n\t\"address\":\"Dhaka, Bangladesh\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ShowStudent",
+			"request": {
+				"url": "http://localhost:8000/api/students/11",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "EditStudent",
+			"request": {
+				"url": "http://localhost:8000/api/students/11/edit",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudent",
+			"request": {
+				"url": "http://localhost:8000/api/students/11/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"al-amin\",\n\t\"course\":\"PHP & Laravel Development\",\n\t\"phone\":\"01822442222\",\n\t\"email\":\"alamin@gmail.com\",\n\t\"address\":\"Rangpur, Bangladesh\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteStudent",
+			"request": {
+				"url": "http://localhost:8000/api/students/11/delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"al-amin\",\n\t\"course\":\"PHP & Laravel Development\",\n\t\"phone\":\"01822442222\",\n\t\"email\":\"alamin@gmail.com\",\n\t\"address\":\"Rangpur, Bangladesh\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
